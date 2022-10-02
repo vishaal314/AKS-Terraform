@@ -21,7 +21,7 @@ steps:
 - task: TerraformCLI@0
   displayName: Terraform Plan
   inputs:
-    command: 'plan main.tfplan'
+    command: 'terraform plan -detailed-exitcode'
     environmentServiceName: 'AKS'
     allowTelemetryCollection: false
 
