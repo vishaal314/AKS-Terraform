@@ -18,12 +18,7 @@ steps:
     command: 'init'
     allowTelemetryCollection: true
 
-- task: TerraformCLI@0
-  displayName: Terraform Plan
-  inputs:
-    command: 'plan'
-    environmentServiceName: 'AKS'
-    allowTelemetryCollection: false
+
 
 
 
