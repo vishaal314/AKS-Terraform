@@ -21,7 +21,7 @@ steps:
 - task: TerraformCLI@0
   displayName: Terraform Plan
   inputs:
-    command: 'plan'
+    command: 'plan main.tfplan'
     environmentServiceName: 'AKS'
     allowTelemetryCollection: false
 
